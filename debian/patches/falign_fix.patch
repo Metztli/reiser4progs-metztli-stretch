@@ -1,0 +1,11 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -408,7 +408,7 @@
+ fi
+  
+ # Force no alignment to save space.
+-if test "x$falign_loop_flag" = xyes; then
++if test "x$falign_loop_flag_cv_" = xyes; then
+   	ALIGN_FLAGS="-falign-jumps=1 -falign-loops=1 -falign-functions=1 \
+ -falign-labels=1 -fno-inline -fstrength-reduce"
+ else
